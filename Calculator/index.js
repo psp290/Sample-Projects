@@ -23,6 +23,8 @@ var add = (a) => {
         document.getElementById("error").style = "color:red;";
     }
 
+
+
     if (a != '=' && a != 'c') {
         s = s.concat(a);                            //Concat string except '=' and 'c' character
     }
@@ -34,6 +36,9 @@ var add = (a) => {
 
     print();                                        //Function to print result
 
+    if (a == '=') {                                 //If a is = then only print answer
+        print();
+    }
 }
 
 function print() {
