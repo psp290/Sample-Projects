@@ -1,0 +1,19 @@
+.body{
+    
+    padding: 10px;
+   
+    margin-top: 60px;
+    box-shadow: 0px 1px 2px 1px gray;
+}
+
+#error{
+    text-align: left;
+    color: red;
+    font-weight: 600;
+}
+
+#output{
+    float: right;
+    color: purple;
+    font-weight: 600;
+}

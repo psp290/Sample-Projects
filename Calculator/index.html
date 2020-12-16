@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+<body class="container">
+
+    
+            <div class="col-md-6 col-sm-6 body">
+                <h1 >Calculator</h1>
+                
+                <table class="col-md-12 col-sm-12 col-xs-12">
+                    <thead>
+                        <input type="text" class="form-control" id="ip-box" value="" >
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <p></p>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <span id="error">Invalid pattern</span>
+                                <span id="output">Ans</span> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-info btn-block" onclick="add(7)">7</button></td>
+                            <td><button class="btn btn-info btn-block" onclick="add(8)">8</button></td>
+                            <td><button class="btn btn-info btn-block" onclick="add(9)">9</button></td>
+                            <td><button class="btn btn-warning btn-block" onclick="add('*')">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-info btn-block" onclick="add(4)">4</button></td>
+                            <td><button class="btn btn-info btn-block" onclick="add(5)">5</button></td>
+                            <td><button class="btn btn-info btn-block" onclick="add(6)">6</button></td>
+                            <td><button class="btn btn-warning btn-block" onclick="add('-')">-</button></td>
+                        </tr>
+                
+                        <tr>
+                            <td><button class="btn btn-info btn-block" onclick="add(1)">1</button></td>
+                            <td><button class="btn btn-info btn-block" onclick="add(2)">2</button></td>
+                            <td><button class="btn btn-info btn-block" onclick="add(3)">3</button></td>
+                            <td><button class="btn btn-warning btn-block" onclick="add('+')">+</button></td>
+                        </tr>
+                
+                        <tr>
+                            <td><button class="btn btn-info btn-block" onclick="add(0)">0</button></td>
+                            <td><button class="btn btn-info btn-block" onclick="add('.')">.</button></td>
+                            <td><button class="btn btn-warning btn-block" onclick="add('/')">/</button></td>
+                            <td><button class="btn btn-success btn-block" onclick="add('=')">=</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><button class="btn btn-danger btn-block" onclick="add('c')">Clear</button></td>
+                        </tr>
+                
+                    </tbody>
+                </table>
+                
+                
+                <marquee style="margin-top: 20px;" behavior="" direction="">Operation will occured left to right</marquee>
+                
+                <div style="clear: both;"></div>
+                
+                
+            </ class="col-md-6">
+
+            
+    
+</body>
+</html>
